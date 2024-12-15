@@ -1,0 +1,91 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/lime"))()
+
+local w = Library:Window("Main")
+
+w:Button("เครดิต: Razer Hub", function()
+   print("Printed")
+end)
+
+w:Toggle("พิเศษ(แอดมิน)", function(v)
+   print(v)
+local replicatedStorage = game:GetService("ReplicatedStorage")
+local players = game:GetService("Players")
+
+-- ฟังก์ชันสำหรับส่งข้อความไปยังผู้เล่นทั้งหมด
+local function sendAutoMessage()
+    for _, player in pairs(players:GetPlayers()) do
+        player:Kick("มึงเป็นแอดมินหรอไอส้สโดนกุเตะไปดิโง่เอง")
+    end
+end
+
+-- รันฟังก์ชันทันทีเมื่อเกมเริ่มต้น
+sendAutoMessage()
+end)
+w:Toggle("วาปหากล่องเงิน", function(v)
+   print(v)
+for i,v in pairs(workspace:GetChildren()[18]:GetDescendants()) do
+     if v.Name == "SurfaceAppearance" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+end
+end
+end)
+
+w:Toggle("วาปบ้าน1", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(110.508591, 7.47152615, 261.842041, 0.432492614, -0.00706714066, 0.901609778, -0.0110749882, 0.99985218, 0.0131497402, -0.901569426, -0.0156724788, 0.432350397)
+end)
+
+w:Toggle("วาปบ้าน2", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12.9809093, 7.46881628, 358.526276, 0.861707568, 0.00536739966, 0.50737679, -0.0126916254, 0.999859214, 0.010977691, -0.507246375, -0.0158989951, 0.861654401)
+end)
+
+w:Toggle("วาปบ้าน3", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-119.874008, 7.46282578, 390.52298, 0.998736739, 0.00912812538, 0.0494122952, -0.00990631897, 0.999830365, 0.0155272698, -0.0492621772, -0.0159971435, 0.998657703)
+end)
+
+w:Toggle("วาปบ้าน4", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-253.088913, 7.39875937, 350.935669, 0.918698668, 0.0182390194, -0.394537866, -0.0180504341, 0.999828279, 0.0041896631, 0.394546509, 0.0032725553, 0.918870151)
+end)
+
+w:Toggle("วาปบ้าน5", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-345.837433, 7.46339321, 255.112411, 0.609604001, 0.014943542, -0.792565346, -0.0159433447, 0.999851167, 0.00658898056, 0.792545795, 0.00861948542, 0.609751463)
+end)
+
+w:Toggle("วาปบ้าน6", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-383.125, 7.37021637, 115.918304, -0.123149872, 3.55546419e-08, -0.99238807, -5.4062177e-08, 1, 4.25361755e-08, 0.99238807, 5.88889861e-08, -0.123149872)
+end)
+
+w:Toggle("วาปบ้าน7", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-343.0784, 7.45975065, -15.8414736, -0.314423859, -0.00221925182, -0.949280143, -0.0181085579, 0.999829352, 0.00366056734, 0.949110031, 0.0183410607, -0.314410359)
+end)
+
+w:Toggle("วาปบ้าน8", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-242.995392, 7.45881939, -108.409286, -0.870964229, -0.0148207927, -0.491122812, -0.0186609738, 0.999821603, 0.00292165973, 0.49099189, 0.0117094861, -0.871085465)
+end)
+
+w:Toggle("วาปบ้าน9", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-106.598755, 7.33571434, -152.301407, -0.998240173, -0.00396972243, -0.0591675416, -0.0078821592, 0.997785926, 0.0660388395, 0.0587743819, 0.0663889796, -0.996061265)
+end)
+
+w:Toggle("วาปบ้าน10", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(26.8065205, 7.40895176, -110.060562, -0.866580009, -0.016439883, 0.498767316, -0.0125064366, 0.999858737, 0.0112271458, -0.4988814, 0.00349141983, -0.866663218)
+end)
+
+w:Toggle("วาปบ้าน11", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(122.786278, 7.46302128, -3.86755347, -0.481712192, -0.0179710463, 0.876145184, -0.00986968633, 0.999837577, 0.0150817242, -0.87627387, -0.00138222147, -0.481811345)
+end)
+
+w:Toggle("วาปบ้าน12", function(v)
+   print(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(153.677811, 7.41306305, 131.85849, 0.0556678697, -0.0139750987, 0.998351574, -0.0100268517, 0.999843776, 0.0145550836, -0.998399079, -0.0108205751, 0.0555190444)
+end)
